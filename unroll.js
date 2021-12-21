@@ -22,7 +22,7 @@ function unroll(squareArray) {
     check(result);
   };
 
-  const TopToBottom = (iteration) => {
+  const topToBottom = (iteration) => {
     if (!running) return;
     currentRow++;
     currentIdx = squareArray.length - 1 - iteration;
@@ -61,7 +61,7 @@ function unroll(squareArray) {
 
   while (running) {
     leftToRight(iterations);
-    TopToBottom(iterations);
+    topToBottom(iterations);
     rightToLeft(iterations);
     bottomToTop();
     iterations++;
