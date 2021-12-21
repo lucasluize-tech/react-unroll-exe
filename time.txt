@@ -8,4 +8,22 @@ Part 3 done
 
 Stoped at 11:30 AM.
 
+Documentation on the App:
+
+1 - The first thing was to create the same functionality to the API for drinks and the ability to post snacks or drinks to the db.
+
+2 - Created The links and Routes to all Drinks.
+
+3 - Modified FoodMenu and FoodItem to include the same functionality with drinks and drink items.
+
+4 - useEffect will now fetch data from both snacks and drinks db.
+
+5 - modified css on navbar for better looking navigation.
+
+6 - Created a new component for the Form to add a new Item. the form saves the data to the database in the specific category.
+
+7 - In the original design if can't find a item it would redirect to the item menu. But it was asked to show a message. So instead, changed the cantFind parameter to a 404 route. 
+
 ONE ISSUE THAT COULD NOT FIX : Re-render useEffect when redirected to any of /snacks or /drinks.
+
+

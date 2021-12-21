@@ -16,7 +16,7 @@ function FoodMenu({ snacks, drinks }) {
       <Card>
         <CardBody>
           <CardTitle className='font-weight-bold text-center'>
-            Food Menu
+            {snacks ? "Food Menu" : "Drinks Menu"}
           </CardTitle>
           <CardText>
             Some quick example text to build on the card title and make up the

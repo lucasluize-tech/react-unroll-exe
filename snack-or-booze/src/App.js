@@ -47,19 +47,19 @@ function App() {
               <Menu snacks={snacks} title='Snacks' />
             </Route>
             <Route path='/snacks/:id'>
-              <Snack items={snacks} cantFind='/snacks' />
+              <Snack items={snacks} cantFind='/nada' />
             </Route>
             <Route exact path='/drinks'>
               <Menu drinks={drinks} title='Drinks' />
             </Route>
             <Route path='/drinks/:id'>
-              <Drink items={drinks} cantFind='/drinks' />
+              <Drink items={drinks} cantFind='/nada' />
             </Route>
             <Route exact path='/new'>
               <NewItemForm />
             </Route>
             <Route>
-              <p>Hmmm. I can't seem to find what you want.</p>
+              <p>404 Hmmm. I can't seem to find what you want.</p>
             </Route>
           </Switch>
         </main>
