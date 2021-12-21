@@ -2,3 +2,10 @@ Started 12/20 at 2:00 PM
 Part 1 and 2 Done.
 
 Break at 8:00 PM
+
+Re-Started 12/21 at 9:00 AM
+Part 3 done
+
+Stoped at 11:30 AM.
+
+ONE ISSUE THAT COULD NOT FIX : Re-render useEffect when redirected to any of /snacks or /drinks.
