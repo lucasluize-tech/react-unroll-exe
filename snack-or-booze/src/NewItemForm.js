@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import SnackOrBoozeApi from "./Api";
 
-const NewItemForm = () => {
+const NewItemForm = ({ setDrinks, drinks }) => {
   const h = useHistory();
   const [formData, setFormData] = useState({
     select: "",
@@ -33,19 +33,20 @@ const NewItemForm = () => {
     formData.select === "snack"
       ? SnackOrBoozeApi.newSnack(formData)
       : SnackOrBoozeApi.newDrink(formData);
+    setDrinks([...drinks, formData]);
   };
 
   return (
     <Form onSubmit={handleSubmit}>
       <h1> Add a new Item to the Menu!</h1>
       <FormGroup>
-        <Label for='select'>Select type</Label>
         <Input
           type='select'
           name='select'
           id='itemSelect'
           value={formData.select}
           onChange={handleChange}>
+          <option>Select type</option>
           <option>drink</option>
           <option>snack</option>
         </Input>

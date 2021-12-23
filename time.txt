@@ -24,6 +24,7 @@ Documentation on the App:
 
 7 - In the original design if can't find a item it would redirect to the item menu. But it was asked to show a message. So instead, changed the cantFind parameter to a 404 route. 
 
-ONE ISSUE THAT COULD NOT FIX : Re-render useEffect when redirected to any of /snacks or /drinks.
+PROBLEM : Re-render useEffect when redirected to any of /snacks or /drinks.
+FIXED : If I change the state of snacks or drinks before redirecting, I don't need to get from the dataBase again. It will show my latest list in state.
 
 

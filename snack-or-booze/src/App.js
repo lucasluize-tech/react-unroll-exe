@@ -31,7 +31,11 @@ function App() {
   }, []);
 
   if (isLoading) {
-    return <p>Loading &hellip;</p>;
+    return (
+      <p style={{ backgroundColor: "yellow", textAlign: "center" }}>
+        Loading &hellip;
+      </p>
+    );
   }
 
   return (
@@ -56,7 +60,7 @@ function App() {
               <Drink items={drinks} cantFind='/nada' />
             </Route>
             <Route exact path='/new'>
-              <NewItemForm />
+              <NewItemForm setDrinks={setDrinks} drinks={drinks} />
             </Route>
             <Route>
               <p>404 Hmmm. I can't seem to find what you want.</p>

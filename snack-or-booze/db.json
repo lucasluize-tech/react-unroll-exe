@@ -27,6 +27,13 @@
       "description": "Crisp!",
       "recipe": "Open can.",
       "serve": "Immediately."
+    },
+    {
+      "id": "testdrink",
+      "name": "testDrink",
+      "description": "a new drink",
+      "recipe": "mistery",
+      "serve": "cold"
     }
   ],
   "snacks": [
